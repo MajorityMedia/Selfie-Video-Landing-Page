@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join The Writer's Forge - Free Screenwriting Community</title>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1067662558776052');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1067662558776052&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #000;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            margin-bottom: 30px;
+        }
+        
+        .logo-text {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: #ccc;
+        }
+        
+        .logo-main {
+            font-size: 38px;
+            font-weight: 900;
+            letter-spacing: 6px;
+            color: #ff4500;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        h1 {
+            font-size: 42px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            color: #fff;
+        }
+        
+        .subhead {
+            font-size: 22px;
+            color: #ccc;
+            margin-bottom: 40px;
+            line-height: 1.4;
+        }
+        
+        .content-section {
+            background: #fff;
+            padding: 60px 20px;
+        }
+        
+        .content-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .content-section strong {
+            color: #ff4500;
+            font-weight: 700;
+        }
+        
+        .benefits {
+            background: #f5f5f5;
+            padding: 50px 20px;
+            margin: 40px 0;
+            border-radius: 8px;
+        }
+        
+        .benefits h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+            text-align: center;
+        }
+        
+        .benefit-item {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #ff4500;
+            border-radius: 4px;
+        }
+        
+        .benefit-item h3 {
+            font-size: 20px;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+        
+        .benefit-item p {
+            font-size: 16px;
+            color: #555;
+            margin: 0;
+        }
+        
+        .corkboard-story {
+            background: rgba(255, 69, 0, 0.05);
+            padding: 40px 30px;
+            border-left: 4px solid #ff4500;
+            margin: 40px 0;
+            border-radius: 4px;
+        }
+        
+        .corkboard-story h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        
+        .email-capture {
+            background: linear-gradient(135deg, #ff4500 0%, #ff6b35 100%);
+            padding: 50px 20px;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .email-capture h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        
+        .email-capture p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        
+        .email-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .input-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: 2px solid #fff;
+            border-radius: 6px;
+            font-family: inherit;
+        }
+        
+        input:focus {
+            outline: none;
+            border-color: #1a1a1a;
+        }
+        
+        .btn-submit {
+            background: #1a1a1a;
+            color: #fff;
+            border: none;
+            padding: 18px 50px;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .btn-submit:hover {
+            background: #000;
+            transform: translateY(-2px);
+        }
+        
+        .assurance {
+            font-size: 14px;
+            color: #fff;
+            margin-top: 20px;
+        }
+        
+        .faq {
+            background: #f5f5f5;
+            padding: 60px 20px;
+        }
+        
+        .faq h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #1a1a1a;
+            text-align: center;
+        }
+        
+        .faq-item {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #ff4500;
+        }
+        
+        .faq-item h3 {
+            font-size: 20px;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+        
+        .faq-item p {
+            font-size: 16px;
+            color: #555;
+            margin: 0;
+        }
+        
+        .footer {
+            background: #1a1a1a;
+            color: #ccc;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+            
+            .subhead {
+                font-size: 18px;
+            }
+            
+            .content-section p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-text">THE WRITER'S</div>
+                <div class="logo-main">FORGE</div>
+            </div>
+            
+            <h1>Join The Writer's Forge</h1>
+            <p class="subhead">Free for Founding Members</p>
+        </div>
+    </div>
+    
+    <div class="content-section">
+        <div class="container">
+            <p>Before I sold scripts to every major studio in Hollywood, I couldn't figure out why my scripts weren't working.</p>
+            
+            <p>I'd rewrite the same scenes over and over. Get vague feedback like "something's off." But never know what was actually broken.</p>
+            
+            <p>Then a mentor taught me to <strong>diagnose story problems like a script doctor.</strong> That changed everything.</p>
+            
+            <p>$2.5 billion in box office later (Shrek 2, Jimmy Neutron, Rugrats, Disenchanted), I'm teaching what I learned.</p>
+        </div>
+    </div>
+    
+    <div class="benefits">
+        <div class="container">
+            <h2>Inside The Writer's Forge, You'll Get:</h2>
+            
+            <div class="benefit-item">
+                <h3>My 10 Iron Clad Rules for a Writing Life</h3>
+                <p>Including why your brilliant idea will suck (and why that's good news), what world-class athletes understand about mastery that most writers don't, and the exact technique a lawyer used to become a working Hollywood screenwriter.</p>
+            </div>
+            
+            <div class="benefit-item">
+                <h3>The 6 Diagnostic Questions</h3>
+                <p>The same questions I use to diagnose scripts in minutes. These reveal whether you've done the foundational work before you waste months rewriting.</p>
+            </div>
+            
+            <div class="benefit-item">
+                <h3>Hot Seat Coaching</h3>
+                <p>I'll work with members live, diagnosing their scripts in real-time. Everyone watches, everyone learns. This is how you learn to see what pros see.</p>
+            </div>
+            
+            <div class="benefit-item">
+                <h3>A Community That Actually Helps</h3>
+                <p>Not cheerleaders. Not "great job!" comments. Real feedback from writers who understand craft and are doing the work themselves.</p>
+            </div>
+            
+            <div class="benefit-item">
+                <h3>Direct Access</h3>
+                <p>Ask questions. Get answers. See how a working screenwriter thinks about story problems.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content-section">
+        <div class="container">
+            <div class="corkboard-story">
+                <h2>The Corkboard</h2>
+                
+                <p>My daughter just got into NYU. In her college essay, she wrote about my corkboard.</p>
+                
+                <p>For years, she watched me pin salmon-colored index cards—scenes, beats, rewrites—slowly figuring out what was broken.</p>
+                
+                <p>She wrote: <em>"Creativity wasn't only spontaneous—it required structure and dedication."</em></p>
+                
+                <p>I didn't know she was watching. I was just trying to survive as a writer.</p>
+                
+                <p>But she saw something worth writing about. A process. A practice. A way of working that combined inspiration with discipline.</p>
+                
+                <p><strong>That's what I'm building here. A place where writers develop that same practice together.</strong></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="email-capture">
+        <div class="container">
+            <h2>Ready to Join?</h2>
+            <p>Enter your name and email to get instant access to The Writer's Forge</p>
+            
+            <form class="email-form" id="emailForm" onsubmit="submitForm(event)">
+                <div class="input-group">
+                    <label class="input-label">First Name</label>
+                    <input type="text" name="firstName" required>
+                </div>
+                
+                <div class="input-group">
+                    <label class="input-label">Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                
+                <button type="submit" class="btn-submit">Join The Forge (Free)</button>
+                
+                <div class="assurance">
+                    ✓ Free for founding members<br>
+                    ✓ No credit card required<br>
+                    ✓ Join in 30 seconds
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>Is this really free?</h3>
+                <p>Yes. Founding members get lifetime free access. Once we grow to a certain size, I'll start charging new members. Get in now while it's free.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What if I'm just starting out?</h3>
+                <p>Perfect. The principles work whether you're on your first script or your tenth. I spent my entire 20s as a struggling beginner.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Will you actually be there?</h3>
+                <p>Yes. I'm building this from scratch. I'll be active daily, especially in these early months.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What if I just want to watch and learn?</h3>
+                <p>This isn't a course you watch passively. It's a community where we work together. If you won't engage, this isn't for you.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <p>J. David Stem</p>
+            <p>Shrek 2 • Jimmy Neutron • Rugrats • Disenchanted</p>
+            <p>$2.5 Billion Worldwide Box Office</p>
+        </div>
+    </div>
+    
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const firstName = formData.get('firstName');
+            const email = formData.get('email');
+            
+            // Track lead event
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead', {
+                    content_name: 'Writers Forge Signup'
+                });
+            }
+            
+            // Submit to Mailchimp
+            submitToMailchimp(firstName, email);
+            
+            // Redirect to thank you page
+            window.location.href = 'thank-you.html';
+        }
+        
+        function submitToMailchimp(firstName, email) {
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = 'https://skool.us5.list-manage.com/subscribe/post?u=1a123613225facde716a78753&id=132c1922ef&f_id=0099f3e0f0';
+            form.target = 'hidden-iframe';
+            
+            const emailInput = document.createElement('input');
+            emailInput.type = 'email';
+            emailInput.name = 'EMAIL';
+            emailInput.value = email;
+            form.appendChild(emailInput);
+            
+            const fnameInput = document.createElement('input');
+            fnameInput.type = 'text';
+            fnameInput.name = 'FNAME';
+            fnameInput.value = firstName;
+            form.appendChild(fnameInput);
+            
+            const honeypot = document.createElement('input');
+            honeypot.type = 'text';
+            honeypot.name = 'b_1a123613225facde716a78753_132c1922ef';
+            honeypot.value = '';
+            honeypot.style.position = 'absolute';
+            honeypot.style.left = '-5000px';
+            form.appendChild(honeypot);
+            
+            document.body.appendChild(form);
+            form.submit();
+            document.body.removeChild(form);
+        }
+    </script>
+    
+    <!-- Hidden iframe for Mailchimp -->
+    <iframe name="hidden-iframe" style="display:none;"></iframe>
+</body>
+</html>
